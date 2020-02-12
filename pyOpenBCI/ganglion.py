@@ -202,7 +202,7 @@ class GanglionDelegate(DefaultDelegate):
     def parse_raw(self, raw_data):
         """Parses the data from the Cyton board into an OpenBCISample object."""
         if type(raw_data) == str:
-            data = struct.unpack(str(len(packet)) + 'B', "".join(packet))
+            data = struct.unpack(str(len(raw_data)) + 'B', "".join(raw_data))
         else:
             data = raw_data
 
