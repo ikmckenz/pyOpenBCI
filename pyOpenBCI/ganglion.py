@@ -1,6 +1,7 @@
 import atexit
 import datetime
 import logging
+import struct
 import sys
 import threading
 import warnings
